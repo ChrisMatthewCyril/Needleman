@@ -53,7 +53,7 @@ def prepare_report():
     pdf.write(h=1, txt="\nDataBank source was found in: " + DataBank_source)
     pdf.write(h=1, txt="\nBMAL Filepath: " + BMAL_filepath)
     pdf.write(h=1, txt="\nCYCLE Filepath: " + CYC_filepath)
-    pdf.write(h=1, txt="\nThis report can be found at: " + final_destination)
+    pdf.write(h=1, txt="\nThis report can be found at: " + str(final_destination))
     pdf.set_text_color(0, 255, 255)
     pdf.write(h=1, txt="\nGitHub Link To Code", link="https://github.com/ChrisMatthewCyril/Needleman")
     pdf.set_text_color(0, 0, 0)
@@ -92,7 +92,7 @@ def plot_bar():
     global final_destination
     filename = final_destination / "BarChart.jpg"
     print("Please wait, generating high-resolution bar chart...")
-    py.savefig(filename, dpi=7000, orientation='landscape')
+    py.savefig(filename, dpi=5000, orientation='landscape')
     print("Done.")
     py.show()
     return filename
@@ -102,13 +102,12 @@ def plot_line():
     global final_destination
     filename = final_destination/"LineChart.jpg"
     sorted_list = collections.OrderedDict(sorted(gene_len_score.items()))
-    print(sorted_list)
     py.plot(sorted_list.keys(), sorted_list.values())
     py.xlabel("Average Length of Pairings (bases)")
     py.ylabel("Needleman-Wunsch Length Normalized Score")
     py.title("Average Length of Pairings vs Length-Normalized Scores")
     print("Please wait, generating high-resolution line chart.")
-    py.savefig(filename, dpi=4000, orientation='landscape')
+    py.savefig(filename, dpi=5000, orientation='landscape')
     print("Done.")
     py.show()
 
