@@ -55,7 +55,7 @@ def prepare_report():
     pdf.write(h=1, txt="\nCYCLE Filepath: " + CYC_filepath)
     pdf.write(h=1, txt="\nThis report can be found at: " + str(final_destination))
     pdf.set_text_color(0, 255, 255)
-    pdf.write(h=1, txt="\nGitHub Link To Code", link="https://github.com/ChrisMatthewCyril/Needleman")
+    pdf.write(h=1, txt="\nGitHub Link To Code", link="https://github.com/ChrisMatthewCyril/Needleman/tree/Version3.0")
     pdf.set_text_color(0, 0, 0)
 
     pdf.write(h=1, txt="\nCalculated Gene Deviation Score: " + str(gene_deviation_score))

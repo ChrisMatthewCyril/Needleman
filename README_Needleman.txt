@@ -2,6 +2,12 @@ README
 
 NOTE: ALL CAPS IS NOT SCREAMING!!!
 
+I COULDN'T UPLOAD ONE FILE. SO I'VE UPLOADED THIS INSTEAD. YOU NEED TO DOWNLOAD A FOLDER. I'VE CODED 4 SEPARATE FILES.
+THE FOLDER HAS ALL THE STUFF THAT SETS UP MY EXPERIMENT. MY CODE JUST WON'T WORK ON ITS OWN.
+
+Where you can find it: https://github.com/ChrisMatthewCyril/Needleman/tree/Version3.0
+
+
 Instructions on how to run Chris Matthew's Final "Exam" code.
 
 Navigate: Needleman --> venv --> Core --> Decipher.py.
@@ -42,7 +48,7 @@ Needleman --> Example
 
 TO FIND AN EXAMPLE PDF REPORT WITH IMAGES.
 Reach me at: ccyrilar@ucsd.edu for more information.
-GitHub page: https://github.com/ChrisMatthewCyril/Needleman
+GitHub page: https://github.com/ChrisMatthewCyril/Needleman/tree/Version3.0
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
