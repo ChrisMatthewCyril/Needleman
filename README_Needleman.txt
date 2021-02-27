@@ -6,7 +6,7 @@ I COULDN'T UPLOAD ONE FILE. SO I'VE UPLOADED THIS INSTEAD. YOU NEED TO DOWNLOAD 
 THE FOLDER HAS ALL THE STUFF THAT SETS UP MY EXPERIMENT. MY CODE JUST WON'T WORK ON ITS OWN.
 
 Where you can find it: https://github.com/ChrisMatthewCyril/Needleman/tree/Version3.0
-
+Beware, choose Version3.0. It's the most recent one.
 
 Instructions on how to run Chris Matthew's Final "Exam" code.
 
