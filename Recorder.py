@@ -85,7 +85,7 @@ def plot_bar():
     py.title("Comparison Pairings vs Length-Normalized Scores")
     filename = report_dest + "REPORT/"+"BarChart.jpg"
     print("Please wait, generating high-resolution bar chart...")
-    py.savefig(filename, dpi=4000, orientation='landscape')
+    py.savefig(filename, dpi=7000, orientation='landscape')
     print("Done.")
     py.show()
     return filename
