@@ -78,10 +78,11 @@ def prepare_report():
     pdf.add_page(orientation='portrait')
     pdf.write(h=1, txt="Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
                         "Best, as always,\nChris Matthew Cyril :)")
-    pdf.output(str(final_destination) + report_filename + ".pdf", dest='F').encode('latin-1')
+    pdf_location = final_destination / report_filename
+    pdf.output(str(pdf_location)+".pdf", dest='F').encode('latin-1')
     print("Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
                         "Best, as always,\nChris Matthew Cyril :) \n"
-          "Don't forget to pick up your report! You can find it at: "+str(final_destination))
+          "Don't forget to pick up your report! You can find it at: "+str(pdf_location))
 
 def plot_bar():
     name_list = [tuple[0] + "\n vs \n" + tuple[1] for tuple in gene_pair_scores.keys()]
@@ -92,8 +93,8 @@ def plot_bar():
     global final_destination
     filename = final_destination / "BarChart.jpg"
     print("Please wait, generating high-resolution bar chart...")
-    py.savefig(filename, dpi=4500, orientation='landscape')
-    print("Done.")
+    py.savefig(filename, dpi = 4500, orientation='landscape')
+    print("Done.\n")
     py.show()
     return str(filename)
 
@@ -106,9 +107,9 @@ def plot_line():
     py.xlabel("Average Length of Pairings (bases)")
     py.ylabel("Needleman-Wunsch Length Normalized Score")
     py.title("Average Length of Pairings vs Length-Normalized Scores")
-    print("Please wait, generating high-resolution line chart.")
-    py.savefig(filename, dpi=4500, orientation='landscape')
-    print("Done.")
+    print("Please wait, generating high-resolution line chart...")
+    py.savefig(filename, dpi = 4500, orientation='landscape')
+    print("Done.\n")
     py.show()
 
     return str(filename)

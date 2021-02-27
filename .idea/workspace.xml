@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c8496ecd-20b8-4d9a-8948-02cb07e5fa33" name="Default Changelist" comment="New class, meant for writing things neatly to output files. Work in progress.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BenchmarkMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Core/BenchmarkMaker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Core/Decipher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Core/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Core/Recorder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReporterTester.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Core/ReporterTester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socrates.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Core/socrates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Core/Recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Core/Recorder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/REPORT/1.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/REPORT/BarChart.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/REPORT/JMJ.pdf" beforeDir="false" />
@@ -71,7 +66,7 @@
       <recent name="$PROJECT_DIR$/venv" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Decipher">
+  <component name="RunManager" selected="Python.ReporterTester">
     <configuration name="Decipher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Needleman" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,8 +179,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Decipher" />
         <item itemvalue="Python.ReporterTester" />
+        <item itemvalue="Python.Decipher" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Test1" />
         <item itemvalue="Python.Test2" />
@@ -207,7 +202,7 @@
       <workItem from="1613676035349" duration="585000" />
       <workItem from="1613676727268" duration="131000" />
       <workItem from="1613676869626" duration="245000" />
-      <workItem from="1614273286587" duration="24009000" />
+      <workItem from="1614273286587" duration="24386000" />
     </task>
     <task id="LOCAL-00001" summary="Added the filepath link for the run_program method of BenchmarkMaker.">
       <created>1612766441795</created>
@@ -405,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614465464224</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary=".xml file">
+      <created>1614465482356</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1614465482356</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,12 +462,13 @@
     <MESSAGE value="Fixed path issues, adjusted DPI resolution for bar and line graphs so that Python doesn't crash. &#10;&#10;New values: 4500 for both." />
     <MESSAGE value="Casted Path object as string to fix error on line 81." />
     <MESSAGE value="Moved core files to a new folder within venv called &quot;Core&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved core files to a new folder within venv called &quot;Core&quot;" />
+    <MESSAGE value=".xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value=".xml file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Needleman$Decipher.coverage" NAME="Decipher Coverage Results" MODIFIED="1614465252489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1614403564844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Needleman$ReporterTester.coverage" NAME="ReporterTester Coverage Results" MODIFIED="1614465121799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Needleman$ReporterTester.coverage" NAME="ReporterTester Coverage Results" MODIFIED="1614465836374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$BenchmarkMaker.coverage" NAME="BenchmarkMaker Coverage Results" MODIFIED="1614393875860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1614403587694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$test.coverage" NAME="test Coverage Results" MODIFIED="1614437319187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
