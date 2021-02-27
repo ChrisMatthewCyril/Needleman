@@ -1,6 +1,7 @@
 import os
 
 gene_pair_scores = {}
+gene_deviation_score = 0
 
 
 def write(dirpath, filename, seq):
