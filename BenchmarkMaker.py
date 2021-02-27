@@ -1,5 +1,6 @@
 import socrates as sc
 
+benchmark_average = 0
 """
     This is the module that sets up the Benchmark average score standard. 
     All you have to do is call run_program(), and specify the file path to the folder of fasta files.
@@ -22,8 +23,8 @@ def run_program(repository):
         human_seqs_dict[human_file] = sc.get_first_seq(repository + human_file)
         fly_seqs_dict[fly_file] = sc.get_first_seq(repository + fly_file)
 
-    # At this stage, we have two dictionaries, that should be in alphabetical order each, with filenames corresponding to
-    # sequences.
+    # At this stage, we have two dictionaries that should be in alphabetical order each, with filenames corresponding
+    # to sequences.
 
     # The next step is to compute the needleman-wunsch score between them
 
@@ -38,9 +39,14 @@ def run_program(repository):
                                         list(fly_seqs_dict.values()))
 
     # Now we need to compute the grand average
+    global benchmark_average
     benchmark_average = sc.grand_average(average_per_pair)
 
     print("\nBenchmark Average Alignment Score: " + str(benchmark_average) + " points per base.")
+
+
+def get_benchmark_average():
+    return benchmark_average
 
 
 class Benchmarker:
