@@ -2,17 +2,21 @@ import socrates as sc
 import BenchmarkMaker as bm
 
 report_filepath = input("Enter the full filepath where you'd like the report to go: ")
-filename = input("Enter filename: ")
+filename = input("Pick a name for the report: ")
 bmal_filepath = input("Enter the full filepath of the BMAL1 fasta file:")
 cycle_filepath = input("Enter the full filepath of the CYCLE fasta file:")
 DataBank_source = input("Enter the full filepath of the DataBank folder provided")
 
 
-#
+########################################################################################################################
+########################################################################################################################
+
+
 bm.run_program(DataBank_source)
 recorder = bm.get_recorder_object()
 standard = bm.get_benchmark_average()
 recorder.gene_deviation_score = standard
+
 
 ########################################################################################################################
 ########################################################################################################################
