@@ -65,16 +65,22 @@ def prepare_report():
         pdf.cell(w=6, h=1, txt=str(gene_pair_scores[(first_file, second_file)]), border=1, ln=1, align='R', fill=False)
 
     barchart_path = plot_bar()
-   # linechart_path = plot_line()
-    pdf.add_page(orientation='landscape',)
+    linechart_path = plot_line()
+    pdf.add_page(orientation='landscape')
     pdf.image(barchart_path, h=20, w=27)
+    pdf.image(linechart_path, h=20, w=27)
+    pdf.add_page(orientation='portrait')
+    pdf.write(h=1, txt="Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
+                        "Best, as always,\nChris Matthew Cyril :)")
     pdf.output(final_destination + report_filename + ".pdf", dest='F').encode('latin-1')
-
+    print("Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
+                        "Best, as always,\nChris Matthew Cyril :) \n"
+          "Don't forget to pick up your report! You can find it at: "+final_destination)
 
 def plot_bar():
     name_list = [tuple[0] + "\n vs \n" + tuple[1] for tuple in gene_pair_scores.keys()]
     py.bar(name_list, gene_pair_scores.values())
-    py.xlabel("Comparison Pairings")
+    py.xlabel("Comparison Pairings", fontsize=8)
     py.ylabel("Needleman-Wunsch Length Normalized Score")
     py.title("Comparison Pairings vs Length-Normalized Scores")
     filename = report_dest + "REPORT/"+"BarChart.jpg"
@@ -84,5 +90,17 @@ def plot_bar():
     py.show()
     return filename
 
-def plot_line():
 
+def plot_line():
+    filename = report_dest + "REPORT/" + "LineChart.jpg"
+    sorted = sorted(gene_len_score.keys())
+    py.plot(gene_len_score.keys(), gene_len_score.values())
+    py.xlabel("Average Length of Pairings (bases)")
+    py.ylabel("Needleman-Wunsch Length Normalized Score")
+    py.title("Average Length of Pairings vs Length-Normalized Scores")
+    print("Please wait, generating high-resolution line chart.")
+    py.savefig(filename, dpi=4000, orientation='landscape')
+    print("Done.")
+    py.show()
+
+    return filename

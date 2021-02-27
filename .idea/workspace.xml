@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c8496ecd-20b8-4d9a-8948-02cb07e5fa33" name="Default Changelist" comment="New class, meant for writing things neatly to output files. Work in progress.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decipher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Recorder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReporterTester.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReporterTester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/REPORT/1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/REPORT/BarChart.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/REPORT/JMJ.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +67,7 @@
       <recent name="$PROJECT_DIR$/venv" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ReporterTester">
+  <component name="RunManager" selected="Python.Decipher">
     <configuration name="Decipher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Needleman" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,8 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ReporterTester" />
         <item itemvalue="Python.Decipher" />
+        <item itemvalue="Python.ReporterTester" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Test1" />
         <item itemvalue="Python.Test2" />
@@ -198,7 +203,7 @@
       <workItem from="1613676035349" duration="585000" />
       <workItem from="1613676727268" duration="131000" />
       <workItem from="1613676869626" duration="245000" />
-      <workItem from="1614273286587" duration="20223000" />
+      <workItem from="1614273286587" duration="21506000" />
     </task>
     <task id="LOCAL-00001" summary="Added the filepath link for the run_program method of BenchmarkMaker.">
       <created>1612766441795</created>
@@ -298,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614445109315</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Finished high resolution bar chart!">
+      <created>1614447568584</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614447568584</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,12 +353,13 @@
     <MESSAGE value="nil" />
     <MESSAGE value="Here come the test files!" />
     <MESSAGE value="Made the PDF recorer to work!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the PDF recorer to work!" />
+    <MESSAGE value="Finished high resolution bar chart!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished high resolution bar chart!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Needleman$Decipher.coverage" NAME="Decipher Coverage Results" MODIFIED="1614445347844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Needleman$Decipher.coverage" NAME="Decipher Coverage Results" MODIFIED="1614448439721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1614403564844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Needleman$ReporterTester.coverage" NAME="ReporterTester Coverage Results" MODIFIED="1614447211678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Needleman$ReporterTester.coverage" NAME="ReporterTester Coverage Results" MODIFIED="1614448337908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$BenchmarkMaker.coverage" NAME="BenchmarkMaker Coverage Results" MODIFIED="1614393875860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1614403587694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$test.coverage" NAME="test Coverage Results" MODIFIED="1614437319187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
