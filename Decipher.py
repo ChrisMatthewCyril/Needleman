@@ -7,7 +7,7 @@ filename = input("Pick a name for the report: ")
 bmal_filepath = input("Enter the full filepath of the BMAL1 fasta file:")
 cycle_filepath = input("Enter the full filepath of the CYCLE fasta file:")
 DataBank_source = input("Enter the full filepath of the DataBank folder provided  (Don't forget the final slash!) :")
-
+print("\n")
 
 ########################################################################################################################
 ########################################################################################################################
