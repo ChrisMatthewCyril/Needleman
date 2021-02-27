@@ -47,20 +47,42 @@ def prepare_report():
     pdf.write(h=1, txt="\nDataBank source was found in: " + DataBank_source)
     pdf.write(h=1, txt="\nBMAL Filepath: " + BMAL_filepath)
     pdf.write(h=1, txt="\nCYCLE Filepath: " + CYC_filepath)
-    pdf.write(h=1, txt="\nThis report can be found at: " + report_filename + final_destination)
+    pdf.write(h=1, txt="\nThis report can be found at: " + final_destination)
     pdf.set_text_color(0, 255, 255)
-    pdf.write(h=1, txt="\nGitHub Link", link="https://github.com/ChrisMatthewCyril/Needleman")
+    pdf.write(h=1, txt="\nGitHub Link To Code", link="https://github.com/ChrisMatthewCyril/Needleman")
     pdf.set_text_color(0, 0, 0)
 
     pdf.write(h=1, txt="\nCalculated Gene Deviation Score: " + str(gene_deviation_score))
     pdf.add_page(orientation="P")
 
+    pdf.set_font('Arial', style='B')
     pdf.cell(w=14, h=1, txt="Compared Files", border=1, ln=0, align='L', fill=False)
     pdf.cell(w=6, h=1, txt="Needleman-Wunsch Score", border=1, ln=1, align='L', fill=False)
-
+    pdf.set_font('Arial', style='')
     for first_file, second_file in gene_pair_scores:
-        pdf.cell(w=14, h=1, txt=first_file+" vs "+second_file, border=1, ln=0,
+        pdf.cell(w=14, h=1, txt=first_file + " vs " + second_file, border=1, ln=0,
                  align='L', fill=False)
         pdf.cell(w=6, h=1, txt=str(gene_pair_scores[(first_file, second_file)]), border=1, ln=1, align='R', fill=False)
 
+    barchart_path = plot_bar()
+   # linechart_path = plot_line()
+    pdf.add_page(orientation='landscape',)
+    pdf.image(barchart_path, h=20, w=27)
     pdf.output(final_destination + report_filename + ".pdf", dest='F').encode('latin-1')
+
+
+def plot_bar():
+    name_list = [tuple[0] + "\n vs \n" + tuple[1] for tuple in gene_pair_scores.keys()]
+    py.bar(name_list, gene_pair_scores.values())
+    py.xlabel("Comparison Pairings")
+    py.ylabel("Needleman-Wunsch Length Normalized Score")
+    py.title("Comparison Pairings vs Length-Normalized Scores")
+    filename = report_dest + "REPORT/"+"BarChart.jpg"
+    print("Please wait, generating high-resolution bar chart...")
+    py.savefig(filename, dpi=4000, orientation='landscape')
+    print("Done.")
+    py.show()
+    return filename
+
+def plot_line():
+
