@@ -1,7 +1,8 @@
 import socrates as sc
 import BenchmarkMaker as bm
 
-report_filepath = input("Enter the full filepath where you'd like the report to go (Don't forget the final slash!) : ")
+report_filepath = input("Enter the full filepath where you'd like the report to go (Don't forget the final slash! (\\ or"
+                        " / depending on your operating system): ")
 filename = input("Pick a name for the report: ")
 bmal_filepath = input("Enter the full filepath of the BMAL1 fasta file:")
 cycle_filepath = input("Enter the full filepath of the CYCLE fasta file:")
