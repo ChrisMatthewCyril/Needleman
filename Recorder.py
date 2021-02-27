@@ -1,4 +1,5 @@
 import os
+import collections
 from fpdf import FPDF
 import datetime
 from matplotlib import pyplot as py
@@ -93,7 +94,8 @@ def plot_bar():
 
 def plot_line():
     filename = report_dest + "REPORT/" + "LineChart.jpg"
-    sorted_list = sorted(gene_len_score)
+    sorted_list = collections.OrderedDict(sorted(gene_len_score.items()))
+    print(sorted_list)
     py.plot(sorted_list.keys(), sorted_list.values())
     py.xlabel("Average Length of Pairings (bases)")
     py.ylabel("Needleman-Wunsch Length Normalized Score")
