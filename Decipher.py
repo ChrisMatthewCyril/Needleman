@@ -47,3 +47,5 @@ if standard-(0.05 * standard) >= average_score >= standard+(0.05 * standard):
 else:
     print("BMAL1 and CYCLE are orthologs, but NOT according to the program.")
 
+recorder.prepare_report()
+
