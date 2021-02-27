@@ -83,6 +83,7 @@ def average_score(score, human_seq, fly_seq):
     :param fly_seq:  Array of drosophile melanogaster sequences.
     :return: Array of average scores, computed per pair.
     """
+
     average_array = []
     for a, b, c in zip(score, human_seq, fly_seq):
         average = a/((len(b)+len(c))/2)
@@ -98,3 +99,8 @@ def grand_average(input_array):
     :return: Average alignment score.
     """
     return np.average(input_array)
+
+
+def find_average(score, human_seq, fly_seq):
+    return score/((len(human_seq)+len(fly_seq))/2)
+

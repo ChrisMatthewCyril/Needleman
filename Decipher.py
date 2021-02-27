@@ -1,11 +1,11 @@
 import socrates as sc
 import BenchmarkMaker as bm
 
-report_filepath = input("Enter the full filepath where you'd like the report to go: ")
+report_filepath = input("Enter the full filepath where you'd like the report to go (Don't forget the final slash!) : ")
 filename = input("Pick a name for the report: ")
 bmal_filepath = input("Enter the full filepath of the BMAL1 fasta file:")
 cycle_filepath = input("Enter the full filepath of the CYCLE fasta file:")
-DataBank_source = input("Enter the full filepath of the DataBank folder provided")
+DataBank_source = input("Enter the full filepath of the DataBank folder provided  (Don't forget the final slash!) :")
 
 
 ########################################################################################################################
@@ -34,22 +34,22 @@ recorder.CYC_filepath = cycle_filepath
 ########################################################################################################################
 
 # Get sequences
-bmal1_seq = sc.get_first_seq([bmal_filepath])
-cycle_seq = sc.get_first_seq([cycle_filepath])
+bmal1_seq = sc.get_first_seq(bmal_filepath)
+cycle_seq = sc.get_first_seq(cycle_filepath)
 
 # Compare sequences and get alignment score.
 score = sc.compare_seqs(bmal1_seq, cycle_seq)
 
 # Normalize it
-average_score = sc.average_score(list(score), bmal1_seq, cycle_seq)
+average_score = sc.find_average(score, bmal1_seq, cycle_seq)
 recorder.bmal_vs_cycle = average_score
 
 if standard-(0.05 * standard) >= average_score >= standard+(0.05 * standard):
-    print("According to the program, BMAL1 and CYCLE are orthologs.")
+    print("According to the program, BMAL1 and CYCLE are orthologs.\n Writing Report...")
     recorder.calculated_true_correlation = True
 
 else:
-    print("BMAL1 and CYCLE are orthologs, but NOT according to the program.")
+    print("BMAL1 and CYCLE are orthologs, but NOT according to the program. Writing Report...")
 
 recorder.prepare_report()
 
