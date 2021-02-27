@@ -3,6 +3,9 @@ import collections
 from fpdf import FPDF
 import datetime
 from matplotlib import pyplot as py
+from pathlib import Path
+
+
 
 DataBank_source = ""
 report_filename = ""
@@ -30,14 +33,14 @@ def add_length_data(average_length, score):
 
 def prepare_report():
     local_list = os.listdir(report_dest)
+    final_destination = Path(report_dest+"REPORT/")
     if local_list.count("REPORT") == 0:
         try:
-            os.mkdir(report_dest + "REPORT/")
+            os.mkdir(final_destination)
         except FileNotFoundError:
             print("Incorrect filepath.")
             return False
 
-    final_destination = (report_dest + "REPORT/")
     pdf = FPDF(orientation="P", unit='cm', format="Letter")
     pdf.set_font('Arial')
     pdf.set_author("Chris Matthew Cyril")
@@ -65,10 +68,10 @@ def prepare_report():
                  align='L', fill=False)
         pdf.cell(w=6, h=1, txt=str(gene_pair_scores[(first_file, second_file)]), border=1, ln=1, align='R', fill=False)
 
-#    barchart_path = plot_bar()
+    barchart_path = plot_bar()
     linechart_path = plot_line()
     pdf.add_page(orientation='landscape')
-#    pdf.image(barchart_path, h=20, w=27)
+    pdf.image(barchart_path, h=20, w=27)
     pdf.image(linechart_path, h=20, w=27)
     pdf.add_page(orientation='portrait')
     pdf.write(h=1, txt="Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
