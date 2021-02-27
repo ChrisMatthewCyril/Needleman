@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8496ecd-20b8-4d9a-8948-02cb07e5fa33" name="Default Changelist" comment="New class, meant for writing things neatly to output files. Work in progress.">
-      <change beforePath="$PROJECT_DIR$/Decipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decipher.py" afterDir="false" />
-    </list>
+    <list default="true" id="c8496ecd-20b8-4d9a-8948-02cb07e5fa33" name="Default Changelist" comment="New class, meant for writing things neatly to output files. Work in progress." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +139,7 @@
       <workItem from="1613676035349" duration="585000" />
       <workItem from="1613676727268" duration="131000" />
       <workItem from="1613676869626" duration="245000" />
-      <workItem from="1614273286587" duration="11432000" />
+      <workItem from="1614273286587" duration="11731000" />
     </task>
     <task id="LOCAL-00001" summary="Added the filepath link for the run_program method of BenchmarkMaker.">
       <created>1612766441795</created>
@@ -199,7 +197,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614407667076</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added the prepare report command">
+      <created>1614407803915</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614407803915</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Cleaned up">
+      <created>1614407975712</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614407975712</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +250,8 @@
     <MESSAGE value="Changed a LOT of things:&#10;&#10;Feb 26, 2021 AD. 10:20 PM" />
     <MESSAGE value="Added the pdf creator" />
     <MESSAGE value="Added the prepare report command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the prepare report command" />
+    <MESSAGE value="Cleaned up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Needleman$Decipher.coverage" NAME="Decipher Coverage Results" MODIFIED="1612766281517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
