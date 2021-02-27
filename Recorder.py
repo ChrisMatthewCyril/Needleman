@@ -64,10 +64,10 @@ def prepare_report():
                  align='L', fill=False)
         pdf.cell(w=6, h=1, txt=str(gene_pair_scores[(first_file, second_file)]), border=1, ln=1, align='R', fill=False)
 
-    barchart_path = plot_bar()
+#    barchart_path = plot_bar()
     linechart_path = plot_line()
     pdf.add_page(orientation='landscape')
-    pdf.image(barchart_path, h=20, w=27)
+#    pdf.image(barchart_path, h=20, w=27)
     pdf.image(linechart_path, h=20, w=27)
     pdf.add_page(orientation='portrait')
     pdf.write(h=1, txt="Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
@@ -93,8 +93,8 @@ def plot_bar():
 
 def plot_line():
     filename = report_dest + "REPORT/" + "LineChart.jpg"
-    sorted = sorted(gene_len_score.keys())
-    py.plot(gene_len_score.keys(), gene_len_score.values())
+    sorted_list = sorted(gene_len_score)
+    py.plot(sorted_list.keys(), sorted_list.values())
     py.xlabel("Average Length of Pairings (bases)")
     py.ylabel("Needleman-Wunsch Length Normalized Score")
     py.title("Average Length of Pairings vs Length-Normalized Scores")
