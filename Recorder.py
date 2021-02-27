@@ -92,10 +92,10 @@ def plot_bar():
     global final_destination
     filename = final_destination / "BarChart.jpg"
     print("Please wait, generating high-resolution bar chart...")
-    py.savefig(filename, dpi=5000, orientation='landscape')
+    py.savefig(filename, dpi=3500, orientation='landscape')
     print("Done.")
     py.show()
-    return filename
+    return str(filename)
 
 
 def plot_line():
@@ -107,8 +107,8 @@ def plot_line():
     py.ylabel("Needleman-Wunsch Length Normalized Score")
     py.title("Average Length of Pairings vs Length-Normalized Scores")
     print("Please wait, generating high-resolution line chart.")
-    py.savefig(filename, dpi=5000, orientation='landscape')
+    py.savefig(filename, dpi=3500, orientation='landscape')
     print("Done.")
     py.show()
 
-    return filename
+    return str(filename)
