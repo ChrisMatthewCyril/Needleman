@@ -1,9 +1,12 @@
 import socrates as sc
 import BenchmarkMaker as bm
+
+report_filepath = input("Enter the full filepath where you'd like the report to go: ")
+filename = input("Enter filename: ")
+
 # Get the BMAL1 sequence, and the CYCLE sequence.
-
-
-bm.run_program("/Users/chrismatthewcyril/Documents/GitHub/Needleman/venv/DataBank/")
+DataBank_source = input("Enter the full filepath of the DataBank folder provided")
+bm.run_program(DataBank_source)
 standard = bm.get_benchmark_average()
 
 # Get filenames
@@ -22,5 +25,3 @@ if standard-(0.05 * standard) >= average_score >= standard+(0.05 * standard):
 else:
     print("BMAL1 and CYCLE are orthologs, but NOT according to the program.")
 
-report_filepath = input("Enter the full filepath where you'd like the report to go: ")
-filename = input("Enter filename: ")
