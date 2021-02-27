@@ -12,6 +12,7 @@ report_filename = ""
 report_dest = ""
 BMAL_filepath = ""
 CYC_filepath = ""
+final_destination = ""
 
 gene_pair_scores = {}
 gene_len_score = {}
@@ -33,6 +34,7 @@ def add_length_data(average_length, score):
 
 def prepare_report():
     local_list = os.listdir(report_dest)
+    global final_destination
     final_destination = Path(report_dest+"REPORT/")
     if local_list.count("REPORT") == 0:
         try:
@@ -87,7 +89,8 @@ def plot_bar():
     py.xlabel("Comparison Pairings", fontsize=8)
     py.ylabel("Needleman-Wunsch Length Normalized Score")
     py.title("Comparison Pairings vs Length-Normalized Scores")
-    filename = report_dest + "REPORT/"+"BarChart.jpg"
+    global final_destination
+    filename = final_destination / "BarChart.jpg"
     print("Please wait, generating high-resolution bar chart...")
     py.savefig(filename, dpi=7000, orientation='landscape')
     print("Done.")
@@ -96,7 +99,8 @@ def plot_bar():
 
 
 def plot_line():
-    filename = report_dest + "REPORT/" + "LineChart.jpg"
+    global final_destination
+    filename = final_destination/"LineChart.jpg"
     sorted_list = collections.OrderedDict(sorted(gene_len_score.items()))
     print(sorted_list)
     py.plot(sorted_list.keys(), sorted_list.values())
