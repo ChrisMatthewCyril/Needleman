@@ -81,7 +81,7 @@ def prepare_report():
     pdf.output(str(final_destination) + report_filename + ".pdf", dest='F').encode('latin-1')
     print("Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
                         "Best, as always,\nChris Matthew Cyril :) \n"
-          "Don't forget to pick up your report! You can find it at: "+final_destination)
+          "Don't forget to pick up your report! You can find it at: "+str(final_destination))
 
 def plot_bar():
     name_list = [tuple[0] + "\n vs \n" + tuple[1] for tuple in gene_pair_scores.keys()]

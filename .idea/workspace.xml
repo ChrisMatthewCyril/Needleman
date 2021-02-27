@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c8496ecd-20b8-4d9a-8948-02cb07e5fa33" name="Default Changelist" comment="New class, meant for writing things neatly to output files. Work in progress.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decipher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Recorder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReporterTester.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReporterTester.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/REPORT/1.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/REPORT/BarChart.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/REPORT/JMJ.pdf" beforeDir="false" />
@@ -67,7 +65,7 @@
       <recent name="$PROJECT_DIR$/venv" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Decipher">
+  <component name="RunManager" selected="Python.ReporterTester">
     <configuration name="Decipher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Needleman" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,8 +178,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Decipher" />
         <item itemvalue="Python.ReporterTester" />
+        <item itemvalue="Python.Decipher" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Test1" />
         <item itemvalue="Python.Test2" />
@@ -203,7 +201,7 @@
       <workItem from="1613676035349" duration="585000" />
       <workItem from="1613676727268" duration="131000" />
       <workItem from="1613676869626" duration="245000" />
-      <workItem from="1614273286587" duration="21506000" />
+      <workItem from="1614273286587" duration="23539000" />
     </task>
     <task id="LOCAL-00001" summary="Added the filepath link for the run_program method of BenchmarkMaker.">
       <created>1612766441795</created>
@@ -310,7 +308,63 @@
       <option name="project" value="LOCAL" />
       <updated>1614447568584</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Everything looks good, except the font size on the bar chart and the line chart is all over the damn place.">
+      <created>1614448664237</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448664237</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Minor edits">
+      <created>1614448691169</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448691169</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Increased bar chart resolution to 7000 dpi.">
+      <created>1614448733030</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448733030</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added line spacing">
+      <created>1614448989219</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448989219</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Still need to fix line chart!">
+      <created>1614449017586</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614449017586</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixed line chart.">
+      <created>1614463031506</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1614463031506</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fixed path issues! This can work on any operating system now.">
+      <created>1614464885348</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1614464885348</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed path issues! This can work on any operating system now.">
+      <created>1614464968086</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1614464968086</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,12 +408,19 @@
     <MESSAGE value="Here come the test files!" />
     <MESSAGE value="Made the PDF recorer to work!" />
     <MESSAGE value="Finished high resolution bar chart!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished high resolution bar chart!" />
+    <MESSAGE value="Everything looks good, except the font size on the bar chart and the line chart is all over the damn place." />
+    <MESSAGE value="Minor edits" />
+    <MESSAGE value="Increased bar chart resolution to 7000 dpi." />
+    <MESSAGE value="Added line spacing" />
+    <MESSAGE value="Still need to fix line chart!" />
+    <MESSAGE value="Fixed line chart." />
+    <MESSAGE value="Fixed path issues! This can work on any operating system now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed path issues! This can work on any operating system now." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Needleman$Decipher.coverage" NAME="Decipher Coverage Results" MODIFIED="1614448439721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Needleman$Decipher.coverage" NAME="Decipher Coverage Results" MODIFIED="1614458710924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1614403564844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Needleman$ReporterTester.coverage" NAME="ReporterTester Coverage Results" MODIFIED="1614448337908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Needleman$ReporterTester.coverage" NAME="ReporterTester Coverage Results" MODIFIED="1614464993584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$BenchmarkMaker.coverage" NAME="BenchmarkMaker Coverage Results" MODIFIED="1614393875860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1614403587694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Needleman$test.coverage" NAME="test Coverage Results" MODIFIED="1614437319187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

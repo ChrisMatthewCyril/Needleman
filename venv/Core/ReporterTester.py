@@ -3,8 +3,8 @@ from random import randint
 
 rec.report_dest = "/Users/chrismatthewcyril/Documents/GitHub/Needleman/venv/"
 rec.report_filename = "1"
-rec.BMAL_filepath = "/Users/chrismatthewcyril/Documents/GitHub/Needleman/venv/BMAL_CYC_FILES/BMAL.fasta"
-rec.CYC_filepath = "/Users/chrismatthewcyril/Documents/GitHub/Needleman/venv/BMAL_CYC_FILES/CYCLE.fasta"
+rec.BMAL_filepath = "/venv/BMAL_CYC_FILES/BMAL.fasta"
+rec.CYC_filepath = "/venv/BMAL_CYC_FILES/CYCLE.fasta"
 rec.DataBank_source = "/Users/chrismatthewcyril/Documents/GitHub/Needleman/venv/DataBank/"
 
 rec.add_pair_score("bmal", "cycle", 2000)
