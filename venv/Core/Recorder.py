@@ -5,8 +5,6 @@ import datetime
 from matplotlib import pyplot as py
 from pathlib import Path
 
-
-
 DataBank_source = ""
 report_filename = ""
 report_dest = ""
@@ -35,7 +33,7 @@ def add_length_data(average_length, score):
 def prepare_report():
     local_list = os.listdir(report_dest)
     global final_destination
-    final_destination = Path(report_dest+"REPORT/")
+    final_destination = Path(report_dest + "REPORT/")
     if local_list.count("REPORT") == 0:
         try:
             os.mkdir(final_destination)
@@ -77,12 +75,15 @@ def prepare_report():
     pdf.image(linechart_path, h=20, w=27)
     pdf.add_page(orientation='portrait')
     pdf.write(h=1, txt="Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
-                        "Best, as always,\nChris Matthew Cyril :)")
+                       "Best, as always,\nChris Matthew Cyril :)")
+    pdf.add_page(orientation='portrait')
+    pdf.write(h=1, txt=getAnalysis())
     pdf_location = final_destination / report_filename
-    pdf.output(str(pdf_location)+".pdf", dest='F').encode('latin-1')
+    pdf.output(str(pdf_location) + ".pdf", dest='F').encode('latin-1')
     print("Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
-                        "Best, as always,\nChris Matthew Cyril :) \n"
-          "Don't forget to pick up your report! You can find it at: "+str(pdf_location))
+          "Best, as always,\nChris Matthew Cyril :) \n"
+          "Don't forget to pick up your report! You can find it at: " + str(pdf_location))
+
 
 def plot_bar():
     name_list = [tuple[0] + "\n vs \n" + tuple[1] for tuple in gene_pair_scores.keys()]
@@ -93,7 +94,7 @@ def plot_bar():
     global final_destination
     filename = final_destination / "BarChart.jpg"
     print("Please wait, generating high-resolution bar chart...")
-    py.savefig(filename, dpi = 4500, orientation='landscape')
+    py.savefig(filename, dpi=4500, orientation='landscape')
     print("Done.\n")
     py.show()
     return str(filename)
@@ -101,15 +102,36 @@ def plot_bar():
 
 def plot_line():
     global final_destination
-    filename = final_destination/"LineChart.jpg"
+    filename = final_destination / "LineChart.jpg"
     sorted_list = collections.OrderedDict(sorted(gene_len_score.items()))
     py.plot(sorted_list.keys(), sorted_list.values())
     py.xlabel("Average Length of Pairings (bases)")
     py.ylabel("Needleman-Wunsch Length Normalized Score")
     py.title("Average Length of Pairings vs Length-Normalized Scores")
     print("Please wait, generating high-resolution line chart...")
-    py.savefig(filename, dpi = 4500, orientation='landscape')
+    py.savefig(filename, dpi=4500, orientation='landscape')
     print("Done.\n")
     py.show()
 
     return str(filename)
+
+
+def getAnalysis():
+    return "I know the truth – BMAL1 and CYCLE are orthologs. However, my program does not catch this. I have " \
+           "identified a few reasons why.\n\n" \
+           "First, realize that I've only used ten gene pairs, there are hundreds of similar genes between fruitflies " \
+           "and humans. I believe that increasing the number of samples would improve the prediction. \n\n" \
+           "Second, within each fasta file is a collection of 5 or more sequences. I wanted to analyze pairings" \
+           " between each of the sequences. Unfortunately, that would take a very long time with the " \
+           "computers we have. But ideally, I would compare individual " \
+           "sequence alignments to determine the best fit, and use that value for the remainder of the code.\n\n" \
+           "Third, take a look at the math. I compute a score, divide it by the AVERAGE length of the sequences, " \
+           "then sum all such averages and take ANOTHER average. When I take multiple averages, I'm allowing the " \
+           "computation to be susceptible to the outliers. I think there might be a better way to find \" common " \
+           "ground,\" without suffering from the consequences of averages. \n\n" \
+           "My proposed solution would be to sample more genes, find better alignments by going through each sequence" \
+           "that we have, then separate into clusters. It is possible that gene length plays a critical role in " \
+           "the accuracy of my results. The prediction tool can then first compute sequence lengths and " \
+           "apply a more customized algorithm which takes into account " \
+           "the length of the gene, and I hope that this will be better at predicting whether two genes are orthologs, " \
+           "or not!"
