@@ -5,6 +5,14 @@ from Bio import SeqIO, Align
 import os
 import numpy as np
 
+"""
+Bio: BioPython module. Has a plethora of useful Bioinformatics tools. SeqIO helps me read seqs and align helps me align 
+them.
+OS: Lets me go through the computer's file directory and read data from the DataBank folder that you NEED!
+numpy: Useful math functions.
+
+"""
+
 
 def __load_seq(link):
     """
@@ -47,7 +55,7 @@ def get_first_id(record_dictionary):
 
 def get_first_seq(file_path):
     """
-    Gets the first sequence from a file path.
+    Gets the first sequence from a file path. Uses internal load_seq method.
     :param file_path: Duh.
     :return: The first sequence found in the fasta file.
     """
@@ -102,5 +110,11 @@ def grand_average(input_array):
 
 
 def find_average(score, human_seq, fly_seq):
+    """
+    :param score: Alignment score.
+    :param human_seq: Human Sequence, string.
+    :param fly_seq: Fly Sequence, string.
+    :return: Length-normalized alignment score.
+    """
     return score/((len(human_seq)+len(fly_seq))/2)
 
