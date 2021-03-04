@@ -1,7 +1,7 @@
 import socrates as sc
 import Recorder as rec
 
-benchmark_average = 0
+benchmark_average = 0 # This is the same thing as the "Gene Deviation Score."
 """
     This is the module that sets up the Benchmark average score standard. 
     All you have to do is call run_program(), and specify the file path to the folder of fasta files.
