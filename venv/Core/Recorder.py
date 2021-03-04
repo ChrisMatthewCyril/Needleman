@@ -114,7 +114,7 @@ def prepare_report():
     pdf.write(h=1, txt="Thanks for an amazing quarter, Professor Schiffer and the TA's!\n"
                        "Best, as always,\nChris Matthew Cyril :)")
     pdf.add_page(orientation='portrait')
-    pdf.write(h=1, txt=getAnalysis())
+#    pdf.write(h=1, txt=getAnalysis())
     pdf_location = final_destination / report_filename
     pdf.output(str(pdf_location) + ".pdf", dest='F').encode('latin-1')
 
