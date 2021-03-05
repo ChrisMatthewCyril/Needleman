@@ -155,26 +155,3 @@ def plot_line():
     py.show()
 
     return str(filename)
-
-
-# My analysis.
-def get_analysis():
-    return "I know the truth – BMAL1 and CYCLE are orthologs. However, my program does not catch this. I have " \
-           "identified a few reasons why.\n\n" \
-           "First, realize that I've only used ten gene pairs, there are hundreds of similar genes between fruitflies "\
-           "and humans. I believe that increasing the number of samples would improve the prediction. \n\n" \
-           "Second, within each fasta file is a collection of 5 or more sequences. I wanted to analyze pairings" \
-           " between each of the sequences. Unfortunately, that would take a very long time with the " \
-           "computers we have. But ideally, I would compare individual " \
-           "sequence alignments to determine the best fit, and use that value for the remainder of the code.\n\n" \
-           "Third, take a look at the math. I compute a score, divide it by the AVERAGE length of the sequences, " \
-           "then sum all such averages and take ANOTHER average. When I take multiple averages, I'm allowing the " \
-           "computation to be susceptible to the outliers. I think there might be a better way to find \" common " \
-           "ground,\" without suffering from the consequences of averages. \n\n" \
-           "My proposed solution would be to sample more genes, find better alignments by going through each sequence" \
-           "that we have, then separate into clusters. It is possible that gene length plays a critical role in " \
-           "the accuracy of my results. The prediction tool can then first compute sequence lengths and " \
-           "apply a more customized algorithm which takes into account " \
-           "the length of the gene, and I hope that this will be better at predicting whether two genes are orthologs,"\
-           \
-           "or not!"
