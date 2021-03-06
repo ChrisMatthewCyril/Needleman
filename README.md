@@ -5,8 +5,17 @@ Goal: To be able to take two gene sequences from two different organisms, and be
 
 This project has two phases: a setup and a test.
 
+MODULES
 socrates.py is the brain of this project. I've used biopython to write methods.
 BenchmarkMaker.py is the setup phase.
+Decipher.py is the file you should run.
+Recorder.py surprise.... RECORDS INFORMATION!!!! :P
+ReporterTester.py is a misnomer, but it tests the Recorder file.
+
+FOLDERS
+
+Databank: Contains the sequences that will be used to construct the gene deviation score.
+
 
 LOGIC BEHIND THE SETUP PHASE:
 I'm comparing seqs between humans and fruitflies. 
